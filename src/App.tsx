@@ -1,30 +1,29 @@
 import './App.css';
 
 
-let name: string;
-let age: number | string;
-let isStudent: boolean;
-let hobbies: string[];
-let role: [number, string];
+// let name: string;
+// let age: number | string;
+// let isStudent: boolean;
+// let hobbies: string[];
+// let role: [number, string];
 
-let printName: (name: string) => never;
+// let printName: (name: string) => never;
 
-
-// type Person = {
+// interface Person {
 //   name: string;
-//   age?: number;
+//   age?: number | string;
 // }
 
-// let person: Person = {
-//   name: "Test",
-//   age: 12
+// interface Guy extends Person {
+//   profession?: string;
 // }
 
-
-function App() {
+const App: React.FC = () => {
   return (
-    <div>
-
+    <div className='App'>
+      <span className='heading'>
+        Taskify
+      </span>
     </div>
   );
 }
